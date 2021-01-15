@@ -5,8 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 
@@ -14,6 +16,8 @@ import lombok.ToString;
 @ToString
 @Data
 @Table(name = "log")
+@NoArgsConstructor
+@AllArgsConstructor
 public class Log {
     @Id
     @Column(name = "id")

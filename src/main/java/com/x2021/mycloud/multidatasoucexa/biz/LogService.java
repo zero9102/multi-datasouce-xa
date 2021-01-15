@@ -23,7 +23,7 @@ public class LogService {
         return logDao.listAll();
     }
 
-    public int insert() {
+    public Long insert() {
         Log log = Log.builder().content("rxxx" + LocalDateTime.now().toString())
                 .describe(DatabaseContextHolder.get().name()).build();
         return logDao.insertOne(log);

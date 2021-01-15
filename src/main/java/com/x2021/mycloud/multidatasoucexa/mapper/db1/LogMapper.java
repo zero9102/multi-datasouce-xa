@@ -10,5 +10,5 @@ public interface LogMapper {
 
     Log getLog(@Param("id") int id);
 
-    int insertSelective(Log log);
+    Long insertSelective(Log log);
 }

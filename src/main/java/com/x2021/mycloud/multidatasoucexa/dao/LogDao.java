@@ -21,7 +21,8 @@ public class LogDao implements DB1Selector {
         return logMapper.getLog(id);
     }
 
-    public int insertOne(Log log) {
-        return logMapper.insertSelective(log);
+    public Long insertOne(Log log) {
+        logMapper.insertSelective(log);
+        return log.getId();
     }
 }

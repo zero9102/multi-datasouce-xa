@@ -10,9 +10,9 @@
 
     <!--保存数据selectKey若启用则添加成功后id会自动返回-->
     <insert id="insertSelective" parameterType="com.x2021.mycloud.multidatasoucexa.entity.Log" useGeneratedKeys="true">
-<!--         <selectKey resultType="int" keyProperty="id" order="AFTER">-->
-<!--              SELECT LAST_INSERT_ID()-->
-<!--         </selectKey>-->
+         <selectKey resultType="java.lang.Long" keyProperty="id" order="AFTER">
+              SELECT LAST_INSERT_ID()
+         </selectKey>
         insert into log(
         content,
         des

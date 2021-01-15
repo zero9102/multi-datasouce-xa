@@ -28,7 +28,7 @@ public class DemoController {
 
 
     @GetMapping("insert")
-    public int insert() {
+    public Long insert() {
         return logService.insert();
     }
 
